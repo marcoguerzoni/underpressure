@@ -180,13 +180,14 @@ section.page-head,section.hero{padding-bottom:clamp(2rem,5vw,4rem);}
   color:var(--ink); transition:opacity .4s ease;
 }
 .quote-source{margin-top:var(--step-4); font:500 1rem/1.4 var(--font-body); color:var(--grey-500);}
-.quote-controls{display:flex; flex-direction:column; align-items:center; gap:var(--step-4); margin-top:var(--step-6);}
+.quote-controls{display:flex; flex-direction:column; align-items:center; gap:var(--step-5); margin-top:var(--step-6);}
 .quote-next{
-  background:none; border:1px solid var(--grey-300); border-radius:var(--radius);
-  padding:.6rem 1.2rem; font:500 .95rem/1 var(--font-body); color:var(--ink);
-  cursor:pointer; transition:border-color .3s ease, color .3s ease;
+  background:none; border:0; padding:.5rem 1rem; cursor:pointer; color:var(--pen);
+  display:inline-flex; align-items:center; justify-content:center;
+  transition:transform .3s ease;
 }
-.quote-next:hover{border-color:var(--pen); color:var(--pen-ink);}
+.quote-next:hover{transform:translateX(5px);}
+.pen-arrow{display:block; width:clamp(64px,8vw,84px); height:auto;}
 .quote-dots{display:inline-flex; gap:.5rem;}
 .quote-dots button{
   width:9px; height:9px; padding:0; border:0; border-radius:50%;
