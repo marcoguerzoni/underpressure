@@ -211,4 +211,33 @@
       io.observe(c);
     });
   })();
+
+  /* ---------------------------------------------------------------------
+     5. Privacy notice banner (no cookies — localStorage ack only)
+     --------------------------------------------------------------------- */
+  (function privacyBanner() {
+    var banner = document.getElementById("privacy-banner");
+    if (!banner) return;
+
+    var KEY = "up-privacy-ack";
+    var acked = null;
+    try {
+      acked = window.localStorage.getItem(KEY);
+    } catch (e) {
+      acked = null;
+    }
+    if (acked === "1") return; // già letto: resta nascosto
+
+    banner.hidden = false;
+
+    var btn = banner.querySelector(".privacy-dismiss");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        banner.hidden = true;
+        try {
+          window.localStorage.setItem(KEY, "1");
+        } catch (e) {}
+      });
+    }
+  })();
 })();

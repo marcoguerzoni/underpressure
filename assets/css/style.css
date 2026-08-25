@@ -318,6 +318,38 @@ section.page-head,section.hero{padding-bottom:clamp(2rem,5vw,4rem);}
 .footer-contact a:hover{color:var(--pen-ink);}
 .footer-sources{flex:1 1 100%; margin:0; padding-top:var(--step-4); border-top:1px solid var(--grey-200);}
 
+/* ---------- Privacy banner ---------- */
+.privacy-banner{
+  position:fixed; left:0; right:0; bottom:0; z-index:60;
+  background:color-mix(in srgb,var(--paper) 96%, transparent);
+  -webkit-backdrop-filter:saturate(1.1) blur(8px);
+  backdrop-filter:saturate(1.1) blur(8px);
+  border-top:2px solid var(--pen);
+  box-shadow:0 -6px 24px rgba(20,20,20,.08);
+}
+.privacy-banner[hidden]{display:none;}
+.privacy-inner{
+  display:flex; align-items:center; gap:var(--step-5);
+  padding-block:var(--step-4);
+}
+.privacy-text{
+  margin:0; flex:1 1 auto;
+  font:400 .92rem/1.5 var(--font-body); color:var(--grey-700);
+}
+.privacy-text strong{color:var(--ink);}
+.privacy-dismiss{
+  flex:0 0 auto; cursor:pointer;
+  background:var(--ink); color:#fff; border:0; border-radius:var(--radius);
+  padding:.6rem 1.2rem; font:600 .95rem/1 var(--font-body);
+  transition:background .3s ease;
+}
+.privacy-dismiss:hover{background:var(--pen-ink);}
+
+@media (max-width:640px){
+  .privacy-inner{flex-direction:column; align-items:flex-start; gap:var(--step-3);}
+  .privacy-dismiss{align-self:flex-end;}
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width:1000px){
   .team{grid-template-columns:repeat(2,1fr);}
