@@ -285,21 +285,6 @@ section.page-head,section.hero{padding-bottom:clamp(2rem,5vw,4rem);}
   .tl-item{grid-template-columns:1fr; gap:var(--step-1); padding:var(--step-4) 0;}
 }
 
-/* ---------- Per le scuole ---------- */
-.school-ctas{display:grid; grid-template-columns:repeat(2,1fr); gap:var(--step-6); padding-block:clamp(2rem,5vw,4rem);}
-.school-card{
-  display:flex; flex-direction:column; align-items:flex-start; gap:var(--step-3);
-  padding:var(--step-6) var(--step-5); background:var(--paper);
-  border:1px solid var(--grey-200); border-radius:var(--radius);
-  transition:border-color .3s ease;
-}
-.school-card:hover{border-color:var(--pen);}
-.school-symbol{font-size:2rem; line-height:1; color:var(--pen);}
-.school-card h2{font:600 clamp(1.4rem,1.5vw + 1rem,1.9rem)/1.15 var(--font-display); margin:0;}
-.school-card p{margin:0; color:var(--grey-700);}
-.link-arrow{font:500 .98rem/1 var(--font-body); color:var(--ink); text-decoration:none; border-bottom:1px solid var(--grey-300); padding-bottom:2px;}
-.link-arrow:hover{color:var(--pen-ink); border-color:var(--pen);}
-.school-card .cta{margin-top:var(--step-3);}
 .contact{text-align:center;}
 .contact h2{display:inline-block;}
 .contact .pen-underline{margin-inline:auto;}
@@ -368,7 +353,6 @@ section.page-head,section.hero{padding-bottom:clamp(2rem,5vw,4rem);}
   }
   .home-cards{grid-template-columns:1fr;}
   .team{grid-template-columns:1fr;}
-  .school-ctas{grid-template-columns:1fr;}
 }
 
 /* ---------- Reduced motion ---------- */
