@@ -8,24 +8,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600&display=swap">
-  <meta name="theme-color" content="#783d47">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Vai al contenuto</a>
 
-  <header class="site-header"><div class="container nav-inner">
-<a class="wordmark" href="index.html" aria-label="Under Pressure, home"><span class="brand-symbol" aria-hidden="true">u<span>p</span></span><span>Under<br>Pressure<span class="brand-caption">RICERCA · SCUOLA · BENESSERE</span></span></a>
-<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Apri il menu"><span class="nav-toggle-box"><span class="nav-toggle-bar"></span></span></button>
-<nav id="site-nav" class="site-nav" aria-label="Navigazione principale">
-<a class="nav-link" href="index.html">Home</a><a class="nav-link" href="chi-siamo.html" aria-current="page">Chi siamo</a><a class="nav-link" href="progetto.html">Il progetto</a><a class="nav-link" href="contatti.html">Contatti</a><a class="nav-link nav-cta" href="partecipa.html">Per le scuole <span aria-hidden="true">↗</span></a>
-</nav></div></header>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="wordmark" href="index.html">Under Pressure</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Apri il menu">
+        <span class="nav-toggle-box"><span class="nav-toggle-bar"></span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigazione principale">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="chi-siamo.html" aria-current="page">Chi siamo</a>
+        <a class="nav-link" href="progetto.html">Progetto</a>
+        <a class="nav-link" href="partecipa.html">Per le scuole</a>
+        <a class="nav-link" href="contatti.html">Contatti</a>
+      </nav>
+    </div>
+  </header>
 
   <main id="main">
 
     <section class="page-head container" aria-labelledby="chi-h">
-      <a class="breadcrumb" href="index.html">Home <span aria-hidden="true">/</span></a>
       <h1 id="chi-h">Chi siamo
         <svg class="pen-underline" width="240" height="14" viewBox="0 0 240 14" fill="none" aria-hidden="true" focusable="false">
           <path d="M4 8.5 C 46 4, 92 11.5, 140 6.5 C 184 2.5, 214 9, 236 7" stroke="#b5372e" stroke-width="3" stroke-linecap="round"/>
@@ -71,11 +77,18 @@
 
   </main>
 
-  <footer class="site-footer"><div class="container">
-<div class="footer-top"><a class="footer-wordmark" href="index.html">Under Pressure<span>Più spazio per imparare.</span></a><nav aria-label="Navigazione nel footer"><a href="progetto.html">Il progetto</a><a href="chi-siamo.html">Il gruppo di ricerca</a><a href="partecipa.html">Per le scuole</a><a href="contatti.html">Contatti</a></nav></div>
-<div class="footer-bottom"><div class="institution"><img src="assets/img/bicocca-logo.svg" alt="Università di Milano-Bicocca" width="52" height="52"><p>Un progetto del <strong>Dipartimento DEMS</strong><br>Università di Milano-Bicocca</p></div><p>Con il sostegno di<br><strong>UniCredit Foundation</strong></p><a href="mailto:progetto.scuole@unimib.it">progetto.scuole@unimib.it ↗</a></div>
-<details class="privacy-note"><summary>Privacy e navigazione</summary><p>Questo sito non utilizza cookie di profilazione né strumenti di analisi del traffico. I caratteri sono forniti da Google Fonts. Per informazioni o per aderire al progetto puoi contattarci via email: i dati inviati sono utilizzati per rispondere e gestire la richiesta.</p></details>
-</div></footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/img/bicocca-logo.svg" alt="Università di Milano-Bicocca" width="64" height="63">
+      </div>
+      <div class="footer-credits">
+        <p>Un progetto del Dipartimento DEMS – Università di Milano-Bicocca</p>
+        <p>Con il sostegno di Unicredit Foundation</p>
+        <p class="footer-contact">Contatto: <a href="mailto:progetto.scuole@unimib.it">progetto.scuole@unimib.it</a></p>
+      </div>
+    </div>
+  </footer>
 
   <script src="assets/js/main.js" defer></script>
 </body>
